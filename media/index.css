@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover {
+    background-color: rgb(13, 200, 50);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: rgb(41, 19, 181);
+}
+
+header {
+    background-color: rgb(245, 245, 245); 
+}
+
+header .log {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.7em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(13, 200, 50);
+}
+
+#red-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ), url("media/instagram.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#red-social h1 {
+    color: white;
+}
+
+#red-social button {
+    font-size: 1.75em;
+}
+
+#introduccion .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#FODA {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+#FODA .container {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#FODA h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#FODA p {
+    display: none;
+}
+
+#FODA .carta {
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.carta:nth-child(1) .img { 
+    background-image: url("media/F.jpg");
+}
+
+.carta:nth-child(2) .img {
+    background-image: url("media/O.jpg");
+}
+
+.carta:nth-child(3) .img {
+    background-image: url("media/D.jpg");
+}
+
+.carta:nth-child(4) .img {
+    background-image: url("media/A.jpg");
+}
+
+.carta .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+#caracteristicas{
+    background-image: url("media/python.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#caracteristicas h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#caracteristicas .container {
+    text-align: left;
+    padding: 200px 12px;
+}
+
+#caracteristicas li {
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#Contactame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+    background-image: url("media/contactar.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#Contactame h2 {
+    font-size: 5vw;
+}
+
+#Contactame button {
+    font-size: 2vw;
+}
+
+footer {
+    background-color: rgb(230, 230, 230); 
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #red-social h1 {
+        font-size: 5em;
+    }
+
+    #introduccion .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #introduccion .texto {
+        width: 50%;
+        text-align: initial;
+        width: 600px;
+        display: flex;
+        padding-left: 50px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #introduccion h2 {
+        margin-top: 0;
+    }
+
+    #introduccion .img-container {
+        background-image:url("media/FotoP.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #FODA .foda {
+        display: flex;
+        justify-content: center;
+    }
+
+    #FODA p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #FODA h3 {
+        margin-top: 0;
+    }
+
+    #FODA .carta {
+        padding: 15px;
+    }
+
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
