@@ -50,7 +50,7 @@ def crear_estudiante():
         "cedula": datos['cedula']
     }), 201
 
-# Actualizar un producto (PUT /estudiantes/<id>)
+# Actualizar un estudiante (PUT /estudiantes/<id>)
 @app.route('/estudiantes/<id>', methods=['PUT'])
 def actualizar_estudiante(id):
     datos = request.get_json()
